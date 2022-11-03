@@ -131,3 +131,63 @@ p {
 .square:not(:empty) {
   background-color: green;
 }
+
+/* Attribute Selectors */
+
+[class="aqua"] {
+  color: aqua;
+}
+/* Equal to .aqua {} */
+
+[style] {
+  color: red !important;
+  text-decoration: line-through;
+}
+
+[required] {
+  border: 2px solid orange;
+}
+
+/* Atrribute Value starts with */
+[class^="p"] {
+  color: hotpink;
+}
+/* Atrribute Value ends with */
+[class$="1"] {
+  color: green;
+}
+/* Atrribute Value includes */
+[class*="ara"] {
+  color: blue;
+}
+
+/* Pseudo Elements */
+#special {
+  position: relative;
+}
+
+#special::before {
+  content: "before";
+  position: absolute;
+  top: 0;
+}
+
+#special::after {
+  content: "after";
+  position: absolute;
+  bottom: 0;
+}
+
+/* Tooltip Example */
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]:hover::after {
+  position: absolute;
+  top: -140%;
+  left: 0;
+  background-color: lightblue;
+  content: attr(data-tooltip);
+  padding: 0.4rem;
+}

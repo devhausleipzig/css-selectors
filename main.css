@@ -1,0 +1,77 @@
+/* Simple Selectors */
+/* Universal Selector */
+/* * { } */
+/* Root Selector */
+/* :root {} */
+/* Element Selector */
+/* p {} */
+section {
+  margin: 1rem;
+  padding: 0.4rem;
+  border: 1px solid black;
+  margin-bottom: 2rem;
+}
+/* Class Selector */
+/* .class {} */
+.wrapper {
+  background-color: #eee;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1.4rem;
+}
+
+.square {
+  height: 60px;
+  aspect-ratio: 1/1;
+  background-color: #eee;
+}
+/* ID Selector */
+/* #id {} */
+
+/* Combinators */
+/* Child Selector */
+.wrapper > p {
+  font-weight: bold;
+}
+
+/* Descendant Selector */
+.wrapper p {
+  color: red;
+}
+
+/* Class Combinator */
+span.text {
+  color: green;
+}
+
+/* ID Combinator */
+span#special {
+  color: hotpink;
+}
+
+/* Comma Combinator */
+/* span,
+p {
+  color: aqua;
+} */
+
+/* General Sibling Selector */
+.square ~ p {
+  color: hotpink;
+}
+
+/* Adjacent Sibling Selector */
+.square + p {
+  color: aqua;
+}
+
+/* Pseudo Selectors */
+/* Hover Selector */
+/* a:hover {} */
+/* Active Selector */
+/* a:active {} */
+/* Visited Selector */
+/* a:visited {} */ ;

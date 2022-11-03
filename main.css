@@ -74,4 +74,60 @@ p {
 /* Active Selector */
 /* a:active {} */
 /* Visited Selector */
-/* a:visited {} */ ;
+/* a:visited {} */
+
+.list > :first-child {
+  color: red;
+}
+
+.list > :last-child {
+  color: green;
+}
+
+.list > :nth-child(2) {
+  color: blue;
+}
+.list > :nth-last-child(2) {
+  color: blue;
+}
+
+.list > :nth-child(even) {
+  background-color: #aaa;
+}
+.list > :nth-child(odd) {
+  background-color: #eee;
+}
+
+.list > :only-child {
+  background-color: hotpink;
+}
+
+.list > p:only-child {
+  background-color: hotpink;
+}
+.list-2 > :first-of-type {
+  color: red;
+}
+
+.list-2 > :last-of-type {
+  color: green;
+}
+
+.list-2 > :nth-of-type(2) {
+  color: blue;
+}
+.list-2 > :nth-last-of-type(2) {
+  color: blue;
+}
+
+.list-2 > :only-of-type {
+  background-color: hotpink;
+}
+
+.square:empty {
+  background-color: red;
+}
+
+.square:not(:empty) {
+  background-color: green;
+}
